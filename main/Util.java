@@ -76,7 +76,7 @@ public class Util {
 				//Self explanatory?
 				System.err.println("Something unexpected happened:");
 				e.printStackTrace();
-				Main.errorLog.add(e.getMessage());
+				Main.errorLog.add(e.toString());
 			}
 		}
 	}

@@ -44,7 +44,7 @@ public class DownloadRunner implements Runnable {
 					doc = Jsoup.connect(element).get();
 				} catch (IOException e) {
 					e.printStackTrace();
-					Main.errorLog.add(e.getMessage());
+					Main.errorLog.add(e.toString());
 					continue;
 				}
 
