@@ -92,7 +92,7 @@ public class Main {
 		Util.switch_toFirefox(r);
 		Util.download_via_url(r, times, t);
 
-		System.out.println("Waiting for Downloadthread to exit...");
+		System.out.println("Waiting for the download thread to exit...");
 		while (toDownload.peek() != null) {
 			Thread.sleep(500);
 		}

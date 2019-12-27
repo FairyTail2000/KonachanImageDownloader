@@ -20,6 +20,8 @@ public class DownloadRunner implements Runnable {
 	
 	@Override
 	public void run() {
+		//Disabling the cache as this is causing problems
+		ImageIO.setUseCache(false);
 		while (true) {
 			//The link to site where image is
 			String element = Main.toDownload.poll();
